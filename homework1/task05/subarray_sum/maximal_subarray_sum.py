@@ -16,6 +16,8 @@ def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     if len(nums) < k:
         print("Sum of all elements")
         return sum(nums)
+    if type(k) not in [int]:
+        raise TypeError("a must be integer")
     total = 0
     for i in range(k):
         total += nums[i]
