@@ -1,0 +1,3 @@
+typing
+pytest
+pre-commit
