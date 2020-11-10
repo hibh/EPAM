@@ -21,7 +21,6 @@ def check_fibonacci(data: Sequence[int]) -> bool:
             if data[i] == tmp1:
                 res = True
             else:
-                res = False
-                break
+                return False
             tmp1, tmp2, tmp3 = tmp2, tmp3, tmp2 + tmp3
     return res
