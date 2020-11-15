@@ -19,7 +19,4 @@ from typing import Any, List
 def combinations(*args: List[Any]) -> List[List]:
     cartesian_product = itertools.product(*args)
     cartesian_list = list(cartesian_product)
-    print(cartesian_list)
-
-
-combinations([1, 2, 3], [3, 4])
+    return cartesian_list

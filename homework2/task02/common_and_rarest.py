@@ -16,8 +16,7 @@ from typing import List, Tuple
 
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
+    if not isinstance(inp, List):
+        raise TypeError("Input must be List")
     data = Counter(inp)
     return (max(inp, key=data.get), min(inp, key=data.get))
-
-
-print(major_and_minor_elem([3, "coc", "coc", 1, 1, 1, 1, 2, 2]))
